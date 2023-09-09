@@ -12,7 +12,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use("/song", songRouter);
+app.use("/api/song", songRouter);
 
 app.get("/", (req, res) => {
   res.send("Hello");
